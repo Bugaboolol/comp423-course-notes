@@ -19,13 +19,13 @@
     ```
     2. Open **VSCode** and navigate to the `rust-dev-container` directory
     3. Type `Cmd+Shift+P` on Mac and `Ctrl+Shift+P` on Windows type `Dev Containers: Add Development Container Configuration Files`.
-    4. Press `Add configuration to workspace`. Search for **Rust**. Press `Rust, devcontainers` from from the list of container configurations and choose the version you want to run. Keep the default configurations.
-    5. Now you should have a default `.devcontainers/devcontainers.json` file
+    4. Press `Add configuration to workspace`. Search for **Rust**. Press `Rust`, and then `bullseye` from from the list of container configurations and choose the version you want to run. Keep the default configurations.
+    5. Now you should have a default `.devcontainers/devcontainers.json` file where you can customize your container.
 
 
 
     6. Now you have set up the Go Container environment. To start the container, press `Cmd+Shift+P` on mac or `Ctrl+Shift+P` on windows. Click `Dev Containers: Rebuild and Reopen in Container`. This will take a while.
-    7. To customize your Dev Container, you can modify the `devcontainer.json` file as follows. The name of the container is in the `name` field. The `image` is the default Docker base environment. With the `customizations`, you can modify the settings or the extensions used in the environment. And finally there are further settings such as `postCreateCommand` which are commands that run after the container is built. Further documentation exists at [Create a Dev Container](https://code.visualstudio.com/docs/devcontainers/create-dev-container).
+    7. To customize your Dev Container, you can modify the `devcontainer.json` file as follows. The name of the container is in the `name` field. The `image` is the default Docker base environment. With the `customizations`, you can modify the settings or the extensions used in the environment. And finally there are further settings such as `postCreateCommand` which are commands that run after the container is built. Further documentation exists at [Create a Dev Container](https://code.visualstudio.com/docs/devcontainers/create-dev-container). These can all be customized for what dependencies you need for rust.
     8. In the terminal, once the container is running you can type ```rustc --version``` and ```cargo --version```
 
 <ins>**Step E Code**</ins>
@@ -56,8 +56,8 @@
     
 3. **Now let us actually create in Rust!**
     1. Now type in the terminal ```cargo new testing```
-    2. This should create a file which should initialize Rust 'src/main.rs' directory.
-    3. In this new file we will code our program as follows.
+    2. This should create a file which should initialize Rust 'src/main.rs' directory. This is where we will type in our code.
+    3. In this new file we will code our program as follows in Step D code.
     4. In the terminal type `cargo build` and `cargo run` this should result in a "Hello COMP423!" outputted.
 
 <ins>**Step D Code**</ins>
